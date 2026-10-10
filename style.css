@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #582710 !important;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0px 15px 10px -15px #11111185;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 700;
+
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 30px !important;
+}
+
+.nav-link:hover {
+  color: #af5024 !important;
+  transform: scale(1.2);
+}
+
+.hero .hero-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: min(100px, 45px);
+}
+
+.hero .hero-data h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.hero .hero-data p {
+  font-size: 22px;
+}
+
+.hero img {
+  object-fit: contain;
+}
+
+
+/* Hero button  */
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+  background: #582710;
+  color: white !important;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #582710;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #582710;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #582710;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+
+/* ABOUT SECTION  */
+.about img {
+  border-radius: 30px;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* novel SECTION  */
+.novel img {
+  border-radius: 30px;
+  min-width: 450px;
+  max-width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.novel1 iframe {
+  width: 100%;
+  max-width: 800px;
+  /* height: 90dvh; */
+  zoom: 1;
+  aspect-ratio: 5/7 !important; 
+}
+#novels .card{
+  max-width: 400px;
+  margin: auto ;
+  box-shadow: 0 0.7em 1.5em -0.5em #582710be;
+}
+#novels .card img{
+  width: 100%;
+  max-width: 100% !important;
+}
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button2 {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white !important;
+  background: #582710;
+  background: linear-gradient(0deg,
+      #582710 0%,
+      #af5024 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #582710be;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  color: #fff !important;
+  margin: auto;
+}
+
+.cssbuttons-io-button2 span {
+  color: #fff !important;
+}
+
+.cssbuttons-io-button2 svg {
+  margin-right: 8px;
+  color: #fff !important;
+}
+
+.cssbuttons-io-button2 path {
+  color: #fff !important;
+
+}
+
+.cssbuttons-io-button2:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #582710be;
+}
+
+.cssbuttons-io-button2:active {
+  box-shadow: 0 0.3em 1em -0.5em #582710be;
+}
+
+
+footer {
+  box-shadow: 0px -15px 10px -15px #11111173;
+
+  font-size: 22px;
+}
+
+@media screen and (max-width: 992px) and (min-width:767.9px) {
+  .hero .hero-data h2 {
+    font-size: 40px;
+  }
+
+  .hero .hero-data p {
+    font-size: 18px;
+  }
+
+  .hero .hero-data {
+    padding: 25px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .novel img {
+    min-width: 350px;
+    object-position: left;
+  }
+}
+
+@media screen and (max-width:767.8px) {
+
+  img:not(.navbar-brand img),
+  .novel img {
+    min-width: 300px !important;
+    max-width: 350px !important;
+  }
+}
+
+@media screen and (max-width:767.8px) {
+
+  .hero .hero-data {
+    padding: 20px;
+  }
+
+  .hero .hero-data h2 {
+    font-size: 35px;
+  }
+
+  .hero .hero-data p {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  .col-12{
+    padding: auto 10px ;
+  }
+
+  img:not(.navbar-brand img),
+  .novel img {
+    min-width: 250px !important;
+    max-width: 300px !important;
+  }
+
+  .novel1 iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 70dvh;
+    min-height: 500px;
+  }
+footer{
+  font-size: 18px;
+}
+}
